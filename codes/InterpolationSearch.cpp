@@ -11,7 +11,6 @@ int interpolationSearch(const std::vector<int>& arr, int x) {
             return -1;
         }
 
-        // Формула интерполяционного поиска
         int pos = low + ((double)(high - low) / (arr[high] - arr[low])) * (x - arr[low]);
 
         if (arr[pos] == x)
@@ -23,7 +22,7 @@ int interpolationSearch(const std::vector<int>& arr, int x) {
             high = pos - 1;
     }
 
-    return -1; // элемент не найден
+    return -1; 
 }
 
 int main() {
@@ -38,3 +37,4 @@ int main() {
 
     return 0;
 }
+
